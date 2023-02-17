@@ -17,8 +17,13 @@ def agregar_usuario(
             "estado": estado
         }
         print(diccionario_int)
+    else: 
+        print("No desea añadir ningun usuario")
     if diccionario.get(nom) != None:
         diccionario[nom].append(diccionario_int)
     else:
         diccionario[nom] = [diccionario_int]
     print(diccionario)
+    
+while True:
+    
